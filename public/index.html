@@ -24,6 +24,11 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <title>React App</title>
   </head>
   <body>
@@ -39,5 +44,27 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+   
+    <script>
+      let myDiv = document.getElementById("myDiv");
+      let mySpan = document.getElementById("mySpan");
+      let myDivOffsetTop = myDiv.offsetTop;
+      let myDivHeight = myDiv.offsetHeight;
+      window.addEventListener("scroll", function () {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (
+          scrollTop >= myDivOffsetTop &&
+          scrollTop <= myDivOffsetTop + myDivHeight
+        ) {
+          let percentage =
+            ((scrollTop - myDivOffsetTop) / myDivHeight) * 100 + 30;
+          mySpan.style.height = percentage + "%";
+          console.log(
+            "The percentage scrolled within myDiv is: " + percentage + "%"
+          );
+        }
+      });
+    </script>
   </body>
 </html>
