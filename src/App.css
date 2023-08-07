@@ -4641,3 +4641,8 @@ html[dir="rtl"] .faq .accordion .accordion-button::before {
   min-width: 0;
   border: none;
 }
+.PhoneInputInput::placeholder{
+  font-size: 14px;
+  line-height: 21px;
+  color: #868686;
+}
