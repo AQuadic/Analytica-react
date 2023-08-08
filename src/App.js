@@ -10,8 +10,14 @@ import InstractorInfo from "./pages/InstractorInfo";
 import Successfull from "./pages/Successfull";
 import Instructor from "./pages/Instructor";
 import ContactForm from "./pages/ContactForm";
-
-
+import SignUp from "./pages/SignUp";
+import SignIn from "./pages/SignIn";
+import ForgetPassword from "./pages/ForgetPassword";
+import SetPassword from "./pages/SetPassword";
+import Verify from "./pages/Verify";
+import MyCourses from "./pages/MyCourses";
+import Certificate from "./pages/Certificate";
+import CourseVideo from "./pages/CourseVideo";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +29,7 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/courses",
+        path: "courses",
         element: <Courses />,
       },
       {
@@ -49,7 +55,39 @@ const router = createBrowserRouter([
       {
         path:"contactForm",
         element:<ContactForm/>
-      }
+      },
+      {
+        path:"signUp",
+        element:<SignUp/>
+      },
+      {
+        path:"signIn",
+        element:<SignIn/>
+      },
+      {
+        path:"forgetPassword",
+        element:<ForgetPassword/>
+      },
+      {
+        path:"setPassword",
+        element:<SetPassword/>
+      },
+      {
+        path:"verify",
+        element:<Verify/>
+      },
+      {
+        path: "myCourses",
+        element: <MyCourses />,
+      },
+       {
+        path: "certificate",
+        element: <Certificate />,
+      },
+      {
+        path: "courseVideo",
+        element: <CourseVideo />,
+      },
     ],
   },
   {

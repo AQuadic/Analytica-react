@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Instructor() {
   return (
@@ -12,7 +13,8 @@ function Instructor() {
         <p>
             Become an instructor and change lives — including your own
         </p>
-        <a href="contactForm.html" className="btn_page">Start Now</a>
+       
+        <Link to="/contactForm" className="btn_page">Start Now</Link>
       </div>
       <img src="/images/icons/become2.webp" className="img_become" alt="become" />
     </div>
@@ -74,7 +76,7 @@ function Instructor() {
           Instructors from around the world teach millions of students on
           Udemy. We provide the tools and skills to teach what you love.
         </p>
-        <a href="contactForm.html" className="btn_page2">Start Now</a>
+        <Link to="/contactForm" className="btn_page2">Start Now</Link>
       </div>
     </div>
   </section>

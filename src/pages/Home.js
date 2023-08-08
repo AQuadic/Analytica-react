@@ -189,7 +189,7 @@ function Home() {
             Instructors from around the world teach millions of students on
             Udemy. We provide the tools and skills to teach what you love.
           </p>
-          <a href="teach.html" className="btn_page2">Start Now</a>
+          <Link to="instructor" className="btn_page2">Start Now</Link>
         </div>
       </div>
     </section>

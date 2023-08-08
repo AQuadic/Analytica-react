@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -7,7 +8,7 @@ function Footer() {
       <div className="fotter_content">
         <div className="head">
           <h1>
-            <a href="index.html"><img src="/logo.svg" alt="" /></a>
+            <Link to="/"><img src="/logo.svg" alt="logo" /></Link>
           </h1>
           <p>
             We change lives, businesses, and nations through digital
@@ -17,8 +18,8 @@ function Footer() {
         <div className="part">
           <h2>Main Pages</h2>
           <div className="links">
-            <a href="index.html">Home</a>
-            <a href="myCourses.html">My Courses</a>
+            <Link to="/">Home</Link>
+            <Link to="myCourses">My Courses</Link>
             <a href="">Privacy Policy</a>
             <a href="">Terms of Use</a>
             <a href="instructorScreen.html">instructorScreen 1</a>

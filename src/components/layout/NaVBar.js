@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
@@ -42,14 +43,14 @@ function NavBar() {
             </li>
           </ul>
         </div>
-        <a href="signIn.html" className="btn_page2"> Login</a>
+        <Link to="/signIn" className="btn_page2"> Login</Link>
         <button className="search btnsearch">
           <img src="/images/search.svg" alt="search" />
         </button>
       </div>
-      <a className="navbar-brand" href="index.html">
+      <Link className="navbar-brand" to="/">
         <img src="/Logo.svg" alt="logo" />
-      </a>
+      </Link>
       <button
         className="navbar-toggler collapsed"
         type="button"
@@ -72,15 +73,15 @@ function NavBar() {
         <div className="col-dec">
           <div className="navbar-nav">
             <div className="nav-item dropdown">
-              <a
+              <h3
                 className="nav-link dropdown-toggle"
-                href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style={{marginBottom:"0px"}}
               >
                 Categories
-              </a>
+              </h3>
               <ul className="dropdown-menu row">
                 <li className="col-md-4 col-sm-6 col-12">
                   <h5>Repairs</h5>
@@ -468,10 +469,10 @@ function NavBar() {
             </div>
           </div>
         </div>
-        <a href="teach.html" className="nav-link">Teach On Analytica</a>
-        <a href="myCourses.html" className="nav-link">My Courses</a>
-        <a href="signIn.html" className="btn_page2">Log In</a>
-        <a href="signUp.html" className="btn_page">Sign Up</a>
+        <Link to="/instructor" className="nav-link">Teach On Analytica</Link>
+        <Link to="/myCourses" className="nav-link">My Courses</Link>
+        <Link to="/signIn" className="btn_page2">Log In</Link>
+        <Link to="/signUp" className="btn_page">Sign Up</Link>
       
         <div className="dropdown" style={{position: "relative", display: "none",}}>
           <h4
@@ -518,8 +519,8 @@ function NavBar() {
 
       <div className="collapse col-phone" id="navbarSupportedContent">
         <div className="right_nav ac_nav" id="">
-          <a href="teach.html" className="nav-link">Teach On Analytica</a>
-          <a href="myCourses.html" className="nav-link">My Courses</a>
+        <Link to="instructor" className="nav-link">Teach On Analytica</Link>
+        <Link to="myCourses" className="nav-link">My Courses</Link>
         </div>
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
           <li className="nav-item dropdown">
